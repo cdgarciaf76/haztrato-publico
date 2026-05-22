@@ -65,7 +65,7 @@
                    style="margin-bottom:28px;">
               <tr>
                 <td align="center">
-                  <a href="{{ .ConfirmationURL }}"
+                  <a href="{{ .SiteURL }}/auth/confirm?token={{ .TokenHash }}&type=magiclink"
                      target="_blank"
                      class="cta-btn"
                      style="display:inline-block; background-color:#1A9B90; color:#FFFFFF;
@@ -118,7 +118,8 @@
                             color:#1A9B90; word-break:break-all; line-height:1.5;
                             background-color:#F8FCFC; border:1px solid #DCF0EE;
                             border-radius:6px; padding:8px 10px;">
-                    {{ .ConfirmationURL }}
+                    {{ .SiteURL }}/auth/confirm?token={{ .TokenHash }}&type=magiclink
+                  
                   </p>
                 </td>
               </tr>
